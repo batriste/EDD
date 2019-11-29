@@ -16,7 +16,7 @@ stable main" > /etc/apt/sources.list.d/vscode.list'
 3.2 sudo apt-get update
 3.3 sudo apt-get install code
 4. Ara anirem a instalar extensions
-![Javaxp](./java.png)
+![Javaxp](https://github.com/batriste/EDD/blob/master/imagenes/java.png)
 Farem click en instalar
 4.1 javac -version
 5. Comprovem quines versions de jdk tenim instal·lades
@@ -28,4 +28,4 @@ en el cas de no tindre versio instala farem:
 5.5 sudo apt install openjdk-9-jdk-headless
 6.Vore el fitxet
 añadim la linea  "java.json": "/usr/lib/jvm/java-11-openjdk-amd64"
-![Javaxp](./javajson.png)
+![Javaxp](https://github.com/batriste/EDD/blob/master/imagenes/javajson.png)
