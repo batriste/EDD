@@ -21,6 +21,8 @@ public class Calcula {
         System.out.println("La resta entre "+operand1+" i "+operand2+" és "+myCalc.resta(operand1, operand2));
         System.out.println("La multiplicació entre "+operand1+" i "+operand2+" és "+myCalc.multiplica(operand1, operand2));
         System.out.println("La divisió entre "+operand1+" i "+operand2+" és "+myCalc.divideix(operand1, operand2));
+        System.out.println("El major entre "+operand1+" i "+operand2+" és "+myCalc.MajorQue(operand1, operand2));
+        System.out.println("La mitja entre "+operand1+" i "+operand2+" és "+myCalc.Mitjana(operand1, operand2));
         System.out.println("Última operació realitzada: "+myCalc.getLastOp()+"; Últim resultat: "+myCalc.getLastResult());
     }
 }
