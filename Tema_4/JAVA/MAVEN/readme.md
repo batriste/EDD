@@ -25,20 +25,30 @@ DinteractiveMode: Indica si volem utilitzar o no el mode interactiu.
 
 Una volta ejecutem el comandament es creara el fitxer pom.xml
 
-### 2. Compilació del la estructura
+### 2. Modifiquem el fitxer pom.xml
 
-Una vegada tenim la aplicacio el que farem sera contruir el projecte desde l'arrel(a on se encontra el fitxer pom)
+Dins de l'archiu pom.xml anyadirem despres de on s'indica la url de maven.apache.org
+```
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+```
+
+### 3. Compilació del la estructura
+
+Una vegada tenim l'aplicacio el que farem sera construir el projecte desde l'arrel (a on se encontra el fitxer pom.xml)
 
 ```
-mvn compile
+$ mvn compile
 ```
 
-Ara añadim el tarjet per a dirli a on te que ejecutar el programa desde la arrel
+Ara anyadim el objectiu per a dirli a on te que ejecutar el programa desde l'arrel i passar-li les dades
 ```
-java -cp target/classes com.ieseljust.edd.App
+$ java -cp target/classes com.ieseljust.edd.Calcula 3 4
 ```
 
 Ara si vole empaquetar el nostre projecte en un .jar i netejar la carpeta del target anterior
 ```
-mvn clean package
+$ mvn clean package
 ```
